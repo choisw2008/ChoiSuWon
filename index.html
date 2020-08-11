@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	 var imgArray=new Array(); 
+		 imgArray[0]="file:///D:/내맘에%20저장/Myweb/WebContent/images/main2.jpg"; 
+		 imgArray[1]="file:///D:/내맘에%20저장/Myweb/WebContent/images/main3.jpg"; 
+		 imgArray[2]="file:///D:/내맘에%20저장/Myweb/WebContent/images/main5.jpg"; 
+		 imgArray[3]="file:///D:/내맘에%20저장/Myweb/WebContent/images/메인사진.jpg"; 		 		 
+	function showImage(){ 
+		 var imgNum=Math.round(Math.random()*3);
+		 var objImg=document.getElementById("introimg"); 
+		 objImg.src=imgArray[imgNum]; 
+		 setTimeout(showImage,2500); 
+		 }
+	
+</script>
+ 
+ 
+ </head>
+
+	<style type="text/css">
+	
+	h2{
+		text-decoration: none;
+		font-size: 20px;
+		color: 00ff00;
+		font-weight: bold;
+		padding-left: 90px;
+	}
+	#main{
+		background-color: #66ff66;
+		margin-top: 35px;
+		
+	}
+	button{
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 4px;
+		margin: 6px;
+		display: inline;
+	}
+	#introimg{
+		margin-right: 50px;
+		float: left;
+	}
+	div{
+		line-height: 200%;
+	}
+	</style>
+</head>
+
+	
+	
+	<body onload="showImage()"> 
+	 	<img id="introimg" border="0" width="200" height="200">
+	 	
+	 	<div>
+		 	<h2>병신들이 모이니 답도 없구나 친구야!</h2>
+		 	<h2>천하가 내 발 아래에 있고 내 친구 또한 옆에 있으니</h2>
+		 	<h2>염라대와 두렵지 않구나 조끗튼거</h2>
+		 	<h2>이모여기 외상이여</h2>
+		</div>
+		 		 
+		<div id="main">
+			<button type="button"><img src="file:///D:/내맘에%20저장/Myweb/WebContent/images/icon.jpg" alt="icon" width="60" height="30" align="middle">친구 찾기</button>
+			<button type="button"><img src="file:///D:/내맘에%20저장/Myweb/WebContent/images/icon1.jpg" alt="icon1" width="60" height="30" align="middle">사진 보기</button>
+			<button type="button"><img src="file:///D:/내맘에%20저장/Myweb/WebContent/images/icon4.jpg" alt="icon4"  width="60" height="30" align="middle">게시판</button>
+			<button type="button"><img src="file:///D:/내맘에%20저장/Myweb/WebContent/images/icon2.jpg" alt="icon2" width="60" height="30" align="middle" >병신 순위</button>
+			<button type="button"><img src="file:///D:/내맘에%20저장/Myweb/WebContent/images/icon3.jpg" alt="icon3" width="60" height="30" align="middle">만행 신고하기</button>				
+		</div>
+	
+	
+</body>
+</html>
