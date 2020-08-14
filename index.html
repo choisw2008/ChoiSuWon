@@ -1,21 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   
+ 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
   
-  body {
+  <style>
+ body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
+  }
+ .container h2{
+  font-family: Comic Sans MS;
   }
   h3, h4 {
     margin: 10px 0 30px 0;
@@ -54,12 +55,11 @@
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
   }
-  .bg-1 {
+  #soo {
     background: #2d2d30;
-    color: #bdbdbd;
   }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
+   #soo h3 {color: #fff;}
+   #soo p {font-style: italic;}
   .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -161,37 +161,38 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">suwon-studio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">Figure</a></li>
-        <li><a href="#contact">producer</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">중고피규어</a></li>
-            <li><a href="#">자작피규어</a></li>
-            <li><a href="#">게시판</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#myPage">suwon-studio</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#myPage">HOME</a></li>
+	        <li><a href="#band">BAND</a></li>
+	        <li><a href="#tour">Figure</a></li>
+	        <li><a href="#contact">producer</a></li>
+	        <li class="dropdown">
+	          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+	          <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="http://localhost:8081/Myweb/mypage/more01.jsp">중고피규어</a></li>
+	            <li><a href="#">자작피규어</a></li>
+	            <li><a href="#">게시판</a></li> 
+	          </ul>
+	        </li>
+	        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+	      </ul>
+	    </div>
+	  </div>
 </nav>
+
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -200,6 +201,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
+
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -210,15 +212,13 @@
           <p>좋은 퀄리티의 제품과 보존도가 좋은 중고 제품들</p>
         </div>      
       </div>
-
       <div class="item">
         <img src="./../wonsu/images/메인사진2.jpg" alt="메인사진2" width="1100" height="550">
         <div class="carousel-caption">
           <h3>나만의 삼점</h3>
           <p>만들고 다른 사람에게도 자신의 캐릭터를 팔아보자</p>
         </div>      
-      </div>
-    
+      </div> 
       <div class="item">
         <img src="./../wonsu/images/메인사진3.jpg" alt="메인 사진3" width="1100" height="550">
         <div class="carousel-caption">
@@ -227,6 +227,7 @@
         </div>      
       </div>
     </div>
+
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -239,64 +240,101 @@
     </a>
 </div>
 
+
 <!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>THE OTAKU</h3>
+<div id="band" class="container">
+  <h3 >THE OTAKU</h3>
   <p><em>We love Anime!</em></p>
-  <p>저희는 그거 중고피규어 판매 사이트가 아닙니다.! 넘치고 넘치는 판매 사이트를 제외하고 어떻게 해야 저희 사이트를 선택할지? 그저 판매가 아닌 즐거움 또한 느낄 수 있는 법이 없는지?
-  많은 고민을 했지만 저는 그거 즐기면 좋고 돈ㄷ도 생기면 좋고 심심할 때 들어오면 좋은 사이트를 만드는 게 목표인 것을  떠 올렸습니다. 본 사이트는 방구석 1급 피규어제작자들이 자신의 피규어 자작 피규어를 만들어 
-  다른 사람들이 그걸 보고 인정해 주고 즐거워해주길 봐라는 마음으로 제작되었습니다 중고피규어를 판매하고 제작피규어를 판매하고 그리고 무엇보다도 자작피규어 설정을 만화 , 소설, 일러스트 등등 다양한 방법으로 표현해 보세요.!</p>
+  <p>저희는 그거 중고피규어 판매 사이트가 아닙니다.! 넘치고 넘치는 판매 사이트를 제외하고 어떻게 해야 저희 사이트를 선택할지? </p>
+  <p>그저 판매가 아닌 즐거움 또한 느낄 수 있는 법이 없는지를 많은 고민을 했지만 저는 그거 즐기면 좋고 돈도 생기면 좋고 심심할 때 들어오면 좋은 사이트를 만드는 게 목표인 것을  떠 올렸습니다.</p>
+  <p> 본 사이트는 방구석 1급 피규어제작자들이 자신의 피규어 자작 피규어를 만들어 다른 사람들이 그걸 보고 인정해 주고 즐거워해주길 봐라는 마음으로 제작되었습니다.</p>
+  <p> 중고피규어를 판매하고 제작피규어를 판매하고 그리고 무엇보다도 자작피규어 설정을 만화, 소설, 일러스트 등등 다양한 방법으로 표현해 보세요.!</p>
   <br>
+  
+  
   <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>case 1</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="./../wonsu/images/프로필5.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
-      </a>
-      <div id="demo" class="collapse">
-        <p>rem</p>
-        <p>Loves rem'</p>
-        <p>Member 김원준 since 1998</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>case 2</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="./../wonsu/images/서브사진3.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>렘 람</p>
-        <p>Loves oku</p>
-        <p>Member 최수원 since 2019</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>case 3</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="./../wonsu/images/서브사진4.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>나루토</p>
-        <p>Loves 람진</p>
-        <p>Member 박연호  since 2015</p>
-      </div>
-    </div>
-  </div>
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>case 1</strong></p><br>
+	      <a href="#demo" data-toggle="collapse">
+	        <img src="./../wonsu/images/서브사진2.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
+	      </a>
+	      <div id="demo" class="collapse">
+	        <p>rem</p>
+	        <p>Loves rem'</p>
+	        <p>Member 김원준 since 1998</p>
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>case 2</strong></p><br>
+	      <a href="#demo2" data-toggle="collapse">
+	        <img src="./../wonsu/images/서브사진3.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
+	      </a>
+	      <div id="demo2" class="collapse">
+	        <p>렘 람</p>
+	        <p>Loves oku</p>
+	        <p>Member 최수원 since 2019</p>
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>case 3</strong></p><br>
+	      <a href="#demo3" data-toggle="collapse">
+	        <img src="./../wonsu/images/서브사진4.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
+	      </a>
+	      <div id="demo3" class="collapse">
+	        <p>나루토</p>
+	        <p>Loves 람진</p>
+	        <p>Member 박연호  since 2015</p>
+	      </div>
+	    </div>
+	  </div>
 </div>
 
+
 <!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">알려주세요!</h3>
-    <p class="text-center">당신이 가장 좋아하는 작품의 이름을.<br> 그리고 편하게 찾아보세요!</p>
-    <ul class="list-group">
-      <li class="list-group-item">Title of work <span class="label label-info">우리사장은!</span></li>
-      <li class="list-group-item">Search list <span class="label label-success">디지몬 좋아함 !</span></li> 
-      <li class="list-group-item">Desired price <span class="badge">원</span></li> 
-    </ul>
+<div id="soo">
+<div class="container">
+  <h2>Filtering</h2>
+  <p>희망하는 제품,제작자,캐릭터를 찾아 원하시는 목록을 쉽게 확인해보세요</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Expertname</th>
+        <th>sellername</th>
+        <th>Product name</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Everyone in the world can buy what they want, but few can make what they want....</p>
+</div>
+     
+   <h3 align="center">top3 Expert</h3>   
     
-    <div class="row text-center">
-      <div class="col-sm-4">
+<div class="row text-center">
+     <div class="col-sm-4">
         <div class="thumbnail">
           <img src="./../wonsu/images/프로필1.jpg" alt="Paris" width="400" height="300">
           <p><strong>프로필</strong></p>
@@ -305,7 +343,7 @@
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Click</button>
         </div>
       </div>
-      <div class="col-sm-4">
+    <div class="col-sm-4">
         <div class="thumbnail">
           <img src="./../wonsu/images/프로필2.jpg" alt="New York" width="400" height="300">
           <p><strong>프로필</strong></p>
@@ -314,7 +352,7 @@
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Click</button>
         </div>
       </div>
-      <div class="col-sm-4">
+    <div class="col-sm-4">
         <div class="thumbnail">
           <img src="./../wonsu/images/프로필3.jpg" alt="San Francisco" width="400" height="300">
           <p><strong>프로필</strong></p>
@@ -324,25 +362,26 @@
         </div>
       </div>
     </div>
-  </div>
+ </div> 
   
-  <!-- Modal -->
+  <!-- 클릭시 팝업 창 -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
+    
+      <!-- Modal 팝업창 세부 내용-->
+<div class="modal-content">
+     <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
           <h4><span class="glyphicon glyphicon-lock"></span> BUYS</h4>
-        </div>
-        <div class="modal-body">
+       	</div>
+    <div class="modal-body">
           <form role="form">
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> 원하시는 작품을 검색하세요</label>
               <input type="number" class="form-control" id="psw" placeholder="Search list?">
             </div>
-            <div class="form-group">
+   <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> 연락처를 남겨주세요</label>
               <input type="text" class="form-control" id="usrname" placeholder="Enter email">
             </div>
@@ -351,7 +390,7 @@
               </button>
           </form>
         </div>
-        <div class="modal-footer">
+  <div class="modal-footer">
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
             <span class="glyphicon glyphicon-remove"></span> Cancel
           </button>
@@ -360,14 +399,15 @@
       </div>
     </div>
   </div>
-</div>
+
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">문의하기</h3>
   <p class="text-center"><em>We love 사장님!</em></p>
 
-  <div class="row">
+
+ <div class="row">
     <div class="col-md-4">
       <p>사장에게 궁금한걸 물어보세요.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>사장 Korea, 서울</p>
@@ -398,9 +438,11 @@
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
     <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
     <li><a data-toggle="tab" href="#menu2">Peter</a></li>
-  </ul>
+ </ul>
 
-  <div class="tab-content">
+  
+ <!-- 하단 탭창 메뉴창 --> 
+ <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h2>Mike Ross, Manager</h2>
       <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
@@ -416,16 +458,15 @@
   </div>
 </div>
 
-<!-- Image of location/map -->
-<img src="./../wonsu/images/마지막.jpg" class="img-responsive" style="width:100%">
 
 <!-- Footer -->
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+  <p>SUWON -Blog  By <a href="https://blog.naver.com/choisw2008" data-toggle="tooltip" title="Visit w3schools">https://blog.naver.com/choisw2008</a></p> 
 </footer>
+
 
 <script>
 $(document).ready(function(){
@@ -457,7 +498,6 @@ $(document).ready(function(){
   });
 })
 </script>
-
 
 </body>
 </html>
