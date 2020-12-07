@@ -1,134 +1,282 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <script src='https://kit.fontawesome.com/a076d05399.js'></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-@font-face {
-    font-family: 'Sucrose Bold Two';
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2") format('woff2');
-    }
-@font-face {
-    font-family: 'IM Fell French Canon Pro';
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2") format('woff2');
-   
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-}
-header { 
-  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mountain-range.jpg") no-repeat;
-  padding-top: 61.93333333%;
-  background-size: cover;
-  font-family: 'Sucrose Bold Two';
-}
-header img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45.8%;
-}
-header h1 { 
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  font-size: 8vw;
-  line-height: .8;
-  margin-top: 0;
-  text-align: center;
-}
-header h1 span {
-  display: block;
-  font-size: 7.00vw;
-}
-main { 
-  background: #fff;
-  position: relative;
-  border: 1px solid #fff;
-  font-family: 'IM Fell French Canon Pro';
-  font-size: 1.2rem;
-  padding: 2rem 0%;
-  line-height: 1.6;
-  text-align: center;
-  
-}
-main h2{
-	margin-top: 10%;
-	font-size: 50px;
-	text-align: center;
-}
-@media all and (max-width: 400px) {
-  main { padding: 2rem; }
-}
+	<head>
+		<title>Paradigm Shift by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="apple-touch-icon" href="images/icon/dog.ico" />
+		<link rel="icon" href="images/icon/dog.ico" />
+	<style type="text/css">
+	
+	</style>
+	</head>
+	<body class="is-preload">
 
-.prop{
-  width:320px;
-  background-color: #3091ff;
-  position: relative;
-  animation-name: example;
-  border-radius:110px;
-  animation-duration: 4s;
-  margin-left: 40%;
-}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-@keyframes example {
-  0%   {top:0px;}
-  25%  {top:0px;}
-  50%  {top:px;}
-  75%  {top:30px;}
-  100% {top:0px;}
-}
-.prop2{
-	background-color:  #9966ff;
-	margin-top: 5%;
-}
-footer{ 
-	background-color: #9966ff;
-	text-align: center;
-	font-size: 20px;
-}
-footer p{
-	color: #fff;
-}
-</style>
-</head>
-<header>
-  
-  <h1>웹 개발 <span><br>포 트</span><br> 폴리오</h1>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mountain-range-front.png">
-</header>
-<body>
-<main>
-	<h2>웹 개발자</h2>
-	<p>저는 코딩을 이용한 웹개발과 디자인을 좋아합니다. 그리고 제가 하는일에 책임감과 애정을 느끼고 있습니다.</p><br><br>
-	
-	<div class="prop">
-		<img class="rounded-circle" src="/static/images/프로필3.jpg" alt="프로필" width="300px;">
-	</div><br><br>
-	
-	<div class="prop2">
-		<img alt="간단한 소개" src="/static/images/prop.png">
-	</div>
-	
-</main>
-<footer>
-	<br><i class="fab fa-500px" style="font-size:56px;color:black;"></i>
-	<p>항상 발전하고 성장해가자.</p>
-	<a href="https://github.com/choisw2008/AniMultiply"><i class="fab fa-github" style="font-size:48px;color:white;"></i></a>&nbsp&nbsp
-	<i class='fa fa-envelope' style="font-size:48px;color:white;"></i>&nbsp&nbsp
-	<a href="https://blog.naver.com/choisw2008"><i class='fa fa-blog' style='font-size:48px;color:white'></i></a>&nbsp&nbsp
-	<i class='fab fa-java' style="font-size:48px;color:white;"></i>
-</footer>
-</body>
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Choi SuWon</h1>
+							<p>최수원 - 崔洙源</p>
+							<p>안녕하세요, 웹 개발자를 목표로 하는 최수원의 웹 포트폴리오입니다.<a href="https://github.com/choisw2008">@choisw2008</a></p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content" style="position: relative;">
+							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+							<img alt="간단한 소개" src="images/prop.png" width="800px;" height="800px;" style="position: absolute;">
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>Introduce</h2>
+							<div class="elementor-text-editor elementor-clearfix">
+							<p class="ng-scope ng-binding"><strong class="global-color">NAME:</strong> 최수원<br/>
+							<strong class="global-color">RESIDENCE:</strong> 인천, 귤현동 장군봉길 50길<br />
+							<strong class="global-color">BIRTHDAY:</strong> 1998. 11. 06<br/>
+							<strong class="global-color">EMAIL:</strong> choisw2008@naver.com<br/></div>
+							<a href="pdf/suwon.pdf" download><span style="font-size: 20px;">Download CV</span></a>
+						</header>
+						<div class="content">
+							<p><strong>강한 책임감과 열정을 가지고 발전하는 웹 개발자입니다.</strong></p>
+							<p> 안녕하십니까 책임감과 열정을 가지고 지원하는 최수원입니다.
+								항상 부족한 점을 인식하고 발전하기 위해 노력하며 많은 것을 보고 배우고 고민하면서
+								웹 개발자로서의 전문성을 가지고 회사에서 필요로 하는 개발자로 성장하고 싶습니다.</p>
+						<div class="col-md-3 col-sm-6">
+				           <div class="service-item">
+				             <div class="icon">
+				               <img src="images/icon/good1.png" alt="html" width="100px;" height="100px;">
+				             </div>
+				             <h4>" 항상 그 자리에 안주하지 않고 끊임없는 노력과 발전을 해나가길 원하는 개발자를 꿈꾸는 자입니다. "</h4>
+				           </div>					            
+				        </div>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>sKils</h2>
+						</header>
+						<div class="content">
+							<p><strong style="font-size: 30px;">사용 가능 기술</strong></p>
+						<div class="row" align="center">
+							<div class="col-md-3 col-sm-6">
+					            <div class="service-item">
+					              <div class="icon">
+					                <img src="images/icon/html.png" alt="html" width="100px;" height="100px;">
+					              </div>
+					              <h4>HTML - 80%</h4>
+					              <p><progress value="80" max="100" style="width: 100px;"></progress></p>
+					            </div>					            
+					          </div>
+					          
+					          <div class="col-md-3 col-sm-6">
+					            <div class="service-item">
+					              <div class="icon">
+					                <img src="images/icon/css.png" alt="css" width="100px;" height="100px;">
+					              </div>
+					              <h4>CSS - 70%</h4>
+					             <p><progress value="70" max="100" style="width: 100px;"></progress></p>
+					            </div>
+					          </div>
+					          
+					          <div class="col-md-3 col-sm-6">
+					            <div class="service-item">
+					              <div class="icon">
+					                <img src="images/icon/js.png" alt="JAVASCRIPT" width="100px;" height="100px;">
+					              </div>
+					              <h4>JAVA SCRIPT - 75%</h4>
+					              <p><progress value="75" max="100" style="width: 100px;"></progress></p>
+					            </div>
+					          </div> 
+					          
+					          <div class="col-md-3 col-sm-6">
+					            <div class="service-item">
+					              <div class="icon">
+					                <img src="images/icon/git.png" alt="git" width="100px;" height="100px;">
+					              </div>
+					              <h4>Git Hub</h4>
+					              <p><progress value="50" max="100" style="width: 100px;"></progress></p>
+					            </div>
+					          </div>	
+					          
+					          <div class="col-md-3 col-sm-6">
+					           <h2> 주 개발 도구</h2>
+					            <div class="service-item">
+					              <div class="icon">
+					                <img src="images/icon/spring.png" alt="spirng" width="100px;" height="100px;">
+					                <img src="images/icon/eclipse.jpg" alt="eclipse" width="100px;" height="100px;">
+					                <p>해당 기술능력 향상에 대한 끊임없는 노력과 다양한 기술 습득을 위해 노력하고 발전하는 사원이 되겠습니다.</p>
+					              </div>				            
+					            </div>
+					          </div> 
+					          					          			      
+						</div>
+					</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Portfolio project</h2>
+							<a href="" download><span style="font-size: 20px;">Download PJ</span></a>
+						</header>
+						<div class="content">
+							<p><strong>Controller</strong> 스프링 부트 커트롤러</p>
+							
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Jsp</h3>
+										<p>프로젝트에서 사용한 Jsp 코드입니다.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/project/jsp.png"><img src="images/project/jsp.png" alt="프로젝트 컨트롤러" /></a>
+											<a href="images/project/jsp2.png"><img src="images/project/jsp2.png" alt="프로젝트 컨트롤러" /></a>
+											<a href="images/project/jsp3.png"><img src="images/project/jsp3.png" alt="프로젝트 컨트롤러" /></a>
+											<a href="images/project/jsp4.png"><img src="images/project/jsp4.png" alt="프로젝트 컨트롤러" /></a>
+										</div>
+									</div>
+								</section>
+							
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Controller</h3>
+										<p>프로젝트에서 담당한 Product파트의 컨트롤러 코드입니다.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/project/controller.png" ><img src="images/project/controller.png" alt="프로젝트 컨트롤러" /></a>
+											<a href="images/project/controller2.png" ><img src="images/project/controller2.png" alt="프로젝트 컨트롤러" /></a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Mapper</h3>
+										<p>프로젝트에서 사용한  Mapper 코드입니다.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/project/mapper.png"><img src="images/project/mapper.png" alt="mapper" /></a>
+											<a href="images/project/mapper2.png"><img src="images/project/mapper2.png" alt="mapper" /></a>										
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>service</h3>
+										<p> 프로젝트에서 사용한 Service 코드입니다.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/project/service.png" class="landscape"><img src="images/project/service.png" alt="서비스" /></a>
+										</div>
+									</div>
+								</section>
+								
+								<section>
+									<header>
+										<h3>View</h3>
+										<p> 프로젝트 실행화면 </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/projectview/view6.png"><img src="images/projectview/view6.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view9.png"><img src="images/projectview/view9.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view7.png"><img src="images/projectview/view7.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view8.png"><img src="images/projectview/view8.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view1.png"><img src="images/projectview/view1.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view2.png"><img src="images/projectview/view2.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view3.png"><img src="images/projectview/view3.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view4.png"><img src="images/projectview/view4.png" alt="뷰" width="200px;" height="200px;"/></a>
+											<a href="images/projectview/view5.png"><img src="images/projectview/view5.png" alt="뷰" width="200px;" height="200px;"/></a>
+										</div>
+									</div>
+								</section>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+							<form>
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">information@untitled.ext</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">(000) 000-0000</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>1234 Somewhere Road, Nashville, TN 00000</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
